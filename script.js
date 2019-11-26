@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-	new WOW().init();
 	
 	// $('body').scrollspy({
 	// 	target: '#navbar',
