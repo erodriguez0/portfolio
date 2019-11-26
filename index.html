@@ -123,14 +123,16 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
 <script type="text/javascript">
-	wow = new WOW({
-		boxClass:     'wow',      // default
-		animateClass: 'animated', // default
-		offset:       0,          // default
-		mobile:       false,       // default
-		live:         true        // default
-	});
-	wow.init();
+	if($(window).width() > 768) {
+		wow = new WOW({
+			boxClass:     'wow',      // default
+			animateClass: 'animated', // default
+			offset:       0,          // default
+			mobile:       false,       // default
+			live:         true        // default
+		});
+		wow.init();
+	}
 </script>
 <script type="text/javascript" src="./script.js"></script>
 </body>
