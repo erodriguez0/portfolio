@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+
 /*Extra small devices (portrait phones, less than 576px)*/
 /*No media query since this is the default in Bootstrap*/
+
+html, body {
+	background-color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.transparent-nav {
+	background-color: rgba(0,0,0,0.5);
+}
+
+section {
+	min-height: 750px;
+	padding: 100px 0;
+}
+
+.about {
+	padding-top: 44px;
+}
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
