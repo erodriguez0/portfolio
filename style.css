@@ -19,7 +19,34 @@ section {
 }
 
 .about {
+	/* Dark blue */
 	padding-top: 44px;
+	background-color: #2F4E6F;
+}
+
+#experience {
+	/* White */
+	background-color: #fff;
+}
+
+#skills {
+	/* Cream */
+	background-color: #fbf8ec;
+}
+
+#education {
+	/* Dark red */
+	background-color: #660000;
+}
+
+#projects {
+	/* Gold */
+	background-color: #D08504;
+}
+
+#contact {
+	/* Dark grey */
+	background-color: #3B4043;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
