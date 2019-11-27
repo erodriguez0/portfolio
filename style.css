@@ -7,6 +7,7 @@ html, body {
 	background-color: #fff;
 	font-family: 'Roboto Condensed', sans-serif;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 .transparent-nav {
@@ -19,9 +20,14 @@ section {
 }
 
 .about {
+	margin-top: -56px;
+	/*padding-top: 156px;*/
 	/* Dark blue */
-	
 	background-color: #2F4E6F;
+}
+
+section.container {
+	min-height: 100%;
 }
 
 #experience {
@@ -63,6 +69,11 @@ section {
 @media (min-width: 992px) {
 	.col-* {
 		min-height: 100%;
+	}
+
+	.about {
+		margin-top: -56px;
+		padding-top: 156px;
 	}
 }
 
