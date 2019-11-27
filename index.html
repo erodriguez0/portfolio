@@ -59,16 +59,16 @@
 	<!-- About Me -->
 	<section id="" class="about text-white wow fadeIn">
 		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-6">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-12 col-lg-6 wow slideInLeft">
 					<h1><b>Hello! I'm Esteban Rodriguez</b></h1>
-					<h3>A software engineer graduate from California State University, Bakersfield</h3>
-					<p>
-						Born in Los Angeles and raised in Bakersfield, California. I went to CSUB to receive my Bachelor's in Computer Science and learn about the world of algorithms, code, and computers. I enjoy finding solutions to everyday problems. Minimizing the time needed to accomplish goals and meet deadlines to focus on the things that matter.
+					<h3 class="mt-2">A software engineer graduate from California State University, Bakersfield</h3>
+					<p class="mt-3">
+						Born in Los Angeles and raised in Bakersfield, California. I went to CSUB to receive my Bachelor's in Computer Science and learn about the world of algorithms, code, and computers. I enjoy finding solutions to everyday problems; minimizing the time needed to accomplish goals and work hard to meet deadlines to focus on the things that matter.
 					</p>
 				</div>
-				<div class="col-12 col-lg-6">
-
+				<div class="col-12 col-lg-6 mt-5 mt-lg-0 align-items-center wow slideInRight">
+					<img class="mx-auto d-block img-fluid" src="https://via.placeholder.com/500x525">
 				</div>
 			</div>
 		</div>
@@ -137,14 +137,15 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
 <script type="text/javascript">
-	if($(window).width() > 768) {
-		wow = new WOW({
-			boxClass:     'wow',      // default
-			animateClass: 'animated', // default
-			offset:       0,          // default
-			mobile:       false,      // default
-			live:         true        // default
-		});
+	if($(window).width() < 768) {
+		// wow = new WOW({
+		// 	boxClass:     'wow',      // default
+		// 	animateClass: 'animated', // default
+		// 	offset:       0,          // default
+		// 	mobile:       false,      // default
+		// 	live:         true        // default
+		// });
+		wow = new WOW();
 		wow.init();
 	}
 </script>

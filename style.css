@@ -20,7 +20,7 @@ section {
 
 .about {
 	/* Dark blue */
-	padding-top: 44px;
+	
 	background-color: #2F4E6F;
 }
 
@@ -61,7 +61,9 @@ section {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+	.col-* {
+		min-height: 100%;
+	}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
