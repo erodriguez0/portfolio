@@ -9,6 +9,25 @@ $(document).ready(function() {
 	     });
 	 });
 	
+	if($(window).width() < 992) {
+		$(function() {
+		    // Desired offset, in pixels
+		    var offset = 55;
+		    // Desired time to scroll, in milliseconds
+		    var scrollTime = 500;
+
+		    $('a[href^="#"]').click(function() {
+		        // Need both `html` and `body` for full browser support
+		        $("html, body").animate({
+		            scrollTop: $( $(this).attr("href") ).offset().top - offset 
+		        }, scrollTime);
+
+		        // Prevent the jump/flash
+		        return false;
+		    });
+		});
+	}
+	
 	// $('body').scrollspy({
 	// 	target: '#navbar',
 	// 	offset: 56
