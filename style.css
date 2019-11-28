@@ -71,12 +71,12 @@ section {
 		min-height: 100%;
 	}
 
-	.about {
+	#about {
 		margin-top: -56px;
 		padding-top: 156px;
 	}
 
-	.about .container {
+	#about .container {
 		margin-top: 78px;
 	}
 }
