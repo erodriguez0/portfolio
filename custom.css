@@ -8,8 +8,10 @@ No media query since this is the default in Bootstrap*/
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
-body {
-	overflow-x: hidden;
+
+html, body {
+	width: 100%;
+	overflow: hidden;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
