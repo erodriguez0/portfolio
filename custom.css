@@ -11,7 +11,7 @@ No media query since this is the default in Bootstrap*/
 
 html, body {
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -67,6 +67,7 @@ html, body {
 
 #about {
 	background-color: #0073ab;
+	height: 1000px;
 	/*height: 100vh;*/
 }
 
