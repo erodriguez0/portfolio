@@ -24,6 +24,8 @@ html, body {
   transition: margin .25s ease-out;
   background-color: #212121;
   color: #fff;
+  height: auto;
+  min-width: 240px;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -35,6 +37,10 @@ html, body {
   width: 15rem;
 }
 
+#nav-list {
+	position: fixed;
+}
+
 .list-group-item,
 .list-group-item:active,
 .list-group-item:visited {
@@ -44,8 +50,7 @@ html, body {
 
 .list-group-item:hover {
 	background-color: #212121;
-	color: #fff;
-	text-decoration: underline;
+	color: #cdcdcd;
 }
 
 #page-content-wrapper {
