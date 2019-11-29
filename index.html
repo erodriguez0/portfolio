@@ -17,16 +17,38 @@
 </head>
 <body>
 
-<div class="row mx-0">
-
-	<nav id="sidebar" class="col-md-3 collapse show bg-dark">
-		<h1>Example</h1>
-	</nav>
-
-	<main id="body-wrapper" class="col-md-9">
-		<i class="fas fa-bars sticky-top p-3" data-toggle="collapse" data-target="sidebar" onclick="toggleSidebar();"></i>
-	</main>
+<div class="d-flex" id="wrapper">
+<!-- Sidebar -->
+<div class="" id="sidebar-wrapper">
+    <div class="sidebar-heading">Start Bootstrap</div>
+    <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action">About</a>
+        <a href="#" class="list-group-item list-group-item-action">Experience</a>
+        <a href="#" class="list-group-item list-group-item-action">Skills</a>
+        <a href="#" class="list-group-item list-group-item-action">Projects</a>
+        <a href="#" class="list-group-item list-group-item-action">Education</a>
+        <a href="#" class="list-group-item list-group-item-action">Contact</a>
+    </div>
 </div>
+<!-- /#sidebar-wrapper -->
+<!-- Page Content -->
+<div id="page-content-wrapper">
+    <nav id="top-nav" class="navbar navbar-expand-lg navbar-dark z-depth-0 d-none">
+        <button class="navbar-toggler" id="menu-toggle">
+        	<span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container-fluid">
+        <div id="about" class="row">
+        	<div class="col-12">
+
+        	</div>
+        </div>
+    </div>
+
+</div>
+<!-- /#page-content-wrapper -->
 
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -38,10 +60,28 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
 <!-- Custom JS -->
 <script type="text/javascript">
-	function toggleSidebar() {
-		$("#sidebar").toggleClass("d-none");
-		// $("#body-wrapper").toggleClass("ml-3");
-	}
+	$(window).resize(function() {
+		var w = $(window).width();
+		if(w > 768) {
+			$("#top-nav").addClass("d-none");
+		} else {
+			$("#top-nav").removeClass("d-none");
+		}
+	});
+
+	$(document).ready(function() {
+		var w = $(window).width();
+		if(w > 768) {
+			$("#top-nav").addClass("d-none");
+		} else {
+			$("#top-nav").removeClass("d-none");
+		}
+	});
+
+	$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+	});
 </script>
 </body>
 </html>
