@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+
+/*Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap*/
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  background-color: #212121;
+  color: #fff;
+  height: auto;
+  min-width: 240px;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#nav-list {
+	position: fixed;
+}
+
+.list-group-item,
+.list-group-item:active,
+.list-group-item:visited {
+	background-color: #212121;
+	color: #fff;
+}
+
+.list-group-item:hover {
+	background-color: #212121;
+	color: #cdcdcd;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#top-nav {
+	background-color: #212121;
+	color: #fff;
+}
+
+.fa-bars {
+	font-size: 20px;
+}
+
+#about {
+	background-color: #0073ab;
+	height: 1000px;
+	/*height: 100vh;*/
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#sidebar-wrapper {
+		margin-left: 0;
+	}
+
+	#page-content-wrapper {
+		min-width: 0;
+		width: 100%;
+	}
+
+	#wrapper.toggled #sidebar-wrapper {
+		margin-left: -15rem;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
