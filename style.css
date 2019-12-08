@@ -16,7 +16,7 @@ section {
 }
 
 #h1-name {
-	font-weight: 700;
+	font-weight: 400;
 	letter-spacing: 1px;
 }
 
@@ -103,7 +103,10 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-.btn-outline-primary {
+.btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary:visited,
+.btn-outline-primary:focus {
 	border-color: #000 !important;
 	border-width: 1px !important;
 }
