@@ -10,15 +10,37 @@ html, body {
 	/* Sticky navbar cannot have overflow hidden in parent */
 }
 
-section {
-	width: 100vw;
-	height: 100vh;
+.wrapper {
+	max-width: 100%;
+	margin: 0 auto;
 }
 
-#h1-name {
-	font-weight: 300;
+section {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.h1-name {
+	font-weight: 400;
 	letter-spacing: 1px;
-	text-shadow: rgba(0,0,0,1);
+}
+
+.w-100-rule {
+	border-top: 4px solid #ff9818;
+}
+
+.h-rule {
+	border-top: 4px solid #ff9818;
+	width: 400px;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+.subheader-hr {
+	border-top: 4px solid #ff9818;
+	width: 150px;
 }
 
 ul.social-network {
@@ -104,28 +126,8 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-.btn-outline-primary,
-.btn-outline-primary:active,
-.btn-outline-primary:visited,
-.btn-outline-primary:focus {
-	border-color: #000 !important;
-	border-width: 1px !important;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-ms-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-}
-
-.btn-outline-primary:hover {
-	border-color: #777 !important;
-	background-color: #fff !important;
-	color: #000 !important;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-ms-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
+button {
+	/*border: 1px solid #000 !important;*/
 }
 
 button span {
@@ -172,10 +174,14 @@ button:hover span, button:hover i {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+	.wrapper {
+		max-width: 768px;
+	}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+	.wrapper {
+		max-width: 992px;
+	}
 }
