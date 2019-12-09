@@ -21,6 +21,7 @@ section {
 }
 
 .h1-name {
+	font-size: 24px;
 	font-weight: 400;
 	letter-spacing: 1px;
 }
@@ -31,7 +32,7 @@ section {
 
 .h-rule {
 	border-top: 4px solid #ff9818;
-	width: 400px;
+	width: 300px;
 }
 
 h4 {
