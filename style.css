@@ -1,188 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
-
 /*Extra small devices (portrait phones, less than 576px)*/
 /*No media query since this is the default in Bootstrap*/
 
+.dark-red { color: #963e44; }
+.bold { font-weight: 700; }
+.font-lg { font-size: 5em; }
+.line-height-sm { line-height: .75em; }
+
 html, body {
 	background-color: #fff;
-	font-family: 'Lato', sans-serif;
 	scroll-behavior: smooth;
+	color: #495057;
+	height: 100%;
 	/* Sticky navbar cannot have overflow hidden in parent */
 }
 
-.wrapper {
-	max-width: 100%;
-	margin: 0 auto;
+.container {
+	min-height: 100%;
 }
 
-section {
-	width: 100%;
-	min-height: 100vh;
+.cover {
+	font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-.h1-name {
-	font-size: 24px;
-	font-weight: 400;
-	letter-spacing: 1px;
+.hr {
+	border-top: 1px solid #cdcdcd;
 }
 
-.w-100-rule {
-	border-top: 4px solid #ff9818;
-}
-
-.h-rule {
-	border-top: 4px solid #ff9818;
+.social-icons {
 	width: 300px;
 }
 
-h4 {
-	font-weight: 400;
-}
-
-.subheader-hr {
-	border-top: 4px solid #ff9818;
-	width: 150px;
-}
-
-ul.social-network {
-	list-style: none;
-	display: inline;
-	margin-left:0 !important;
-	padding: 0;
-}
-ul.social-network li {
-	display: inline;
-	margin: 0 5px;
-}
-
-ul.social-network li small {
-	color: #000;
-	font-size: 15px;
-}
-
-.social-network a.icoFacebook:hover {
-	background-color:#3B5998;
-}
-
-.social-network a.icoTwitter:hover {
-	background-color:#33ccff;
-}
-
-.social-network a.icoLinkedin:hover {
-	background-color:#007bb7;
-}
-
-.social-network a.icoGithub:hover {
-	background-color:#000;
-}
-
-.social-network a.icoStackOverflow:hover {
-	background-color:#f48024;
-}
-
-.social-network a.icoEmail:hover {
-	background-color:#dd1e1e;
-}
-
-.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoLinkedin:hover i {
-	color:#fff;
-}
-a.socialIcon:hover, .socialHoverClass {
-	color:#44BCDD;
-}
-
-.social-circle li a {
-	display:inline-block;
-	position:relative;
-	margin:0 auto 0 auto;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-	text-align:center;
-	width: 50px;
-	height: 50px;
-	font-size:20px;
-	background-color: #b3b3b3;
-}
-.social-circle li i {
-	margin:0;
-	line-height:50px;
+.social-icons a {
+	/*display: inline-block;*/
+	height: 3.5rem;
+	width: 3.5rem;
+	background-color: #495057;
+	color: #fff !important;
+	border-radius: 100%;
 	text-align: center;
+	font-size: 1.5rem;
+	line-height: 3.5rem;
+	/*margin-right: 1rem;*/
 }
 
-.social-circle li a:hover i, .triggeredHover {
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;
-}
-.social-circle i {
-	color: #fff;
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-	transition: all 0.8s;
+.social-icons a:last-child {
+	margin-right: 0;
 }
 
-button {
-	/*border: 1px solid #000 !important;*/
-}
-
-button span {
-	color: #000;
-	font-size: 14px;
-	margin-top: 2px;
-	transition: 0.3s;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-ms-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-}
-
-button i {
-	color: #000;
-	font-size: 20px;
-	margin-top: 1px;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-ms-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-}
-
-button:hover span, button:hover i {
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-ms-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	color: #777 !important;
+.social-icons a:hover {
+	background-color: #963e44;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
+	.social-icons {
+		width: 400px;
+	}
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
+	.hr {
+		max-width: 600px;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-	.wrapper {
-		max-width: 768px;
-	}
+
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-	.wrapper {
-		max-width: 992px;
-	}
+
 }
