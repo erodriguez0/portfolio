@@ -22,6 +22,10 @@ html, body {
 	font-family: 'Saira Extra Condensed', sans-serif;
 }
 
+.email-link:hover {
+	color: #495057;
+}
+
 .hr {
 	border-top: 1px solid #cdcdcd;
 }
