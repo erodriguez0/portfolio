@@ -30,7 +30,7 @@ html, body {
 	border-top: 1px solid #cdcdcd;
 }
 
-.social-icons {
+.link-buttons, .social-icons {
 	width: 300px;
 }
 
@@ -57,7 +57,7 @@ html, body {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-	.social-icons {
+	.link-buttons, .social-icons {
 		width: 400px;
 	}
 }
