@@ -11,6 +11,7 @@ html, body {
 	scroll-behavior: smooth;
 	color: #495057;
 	height: 100%;
+	letter-spacing: 1.5px;
 	/* Sticky navbar cannot have overflow hidden in parent */
 }
 
@@ -31,7 +32,7 @@ html, body {
 }
 
 .link-buttons, .social-icons {
-	width: 300px;
+	/*width: 300px;*/
 }
 
 .social-icons a {
@@ -55,10 +56,24 @@ html, body {
 	background-color: #963e44;
 }
 
+.buttons a {
+	font-size: 1rem;
+}
+
+.btn-dark-red {
+	background-color: #963e44;
+	color: #ffffff;
+}
+
+.btn-dark-red:hover {
+	background-color: #5a2528;
+	color: #ffffff;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	.link-buttons, .social-icons {
-		width: 400px;
+		/*width: 400px;*/
 	}
 }
 
