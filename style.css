@@ -3,7 +3,7 @@
 
 .dark-red { color: #963e44; }
 .bold { font-weight: 700; }
-.font-lg { font-size: 5em; }
+.font-lg { font-size: 3em; }
 .line-height-sm { line-height: .75em; }
 
 html, body {
@@ -72,6 +72,8 @@ html, body {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+	.font-lg { font-size: 4em; }
+
 	.link-buttons, .social-icons {
 		/*width: 400px;*/
 	}
@@ -79,6 +81,8 @@ html, body {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+	.font-lg { font-size: 5em; }
+
 	.hr {
 		max-width: 600px;
 	}
