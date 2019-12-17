@@ -3,7 +3,8 @@
 
 .dark-red { color: #963e44; }
 .bold { font-weight: 700; }
-.font-lg { font-size: 3em; }
+.font-lg { font-size: 4em; }
+h4 { font-size: 1.5em; }
 .line-height-sm { line-height: .75em; }
 
 html, body {
@@ -70,10 +71,12 @@ html, body {
 	color: #ffffff;
 }
 
+a.cover-btn {
+	font-size: 1.25em;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-	.font-lg { font-size: 4em; }
-
 	.link-buttons, .social-icons {
 		/*width: 400px;*/
 	}
@@ -81,7 +84,9 @@ html, body {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-	.font-lg { font-size: 5em; }
+	.font-lg { font-size: 4em; }
+
+	h4 { font-size: 1.5em }
 
 	.hr {
 		max-width: 600px;
@@ -90,10 +95,44 @@ html, body {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+	.font-lg { font-size: 4.75em; }
 
+	h4 { font-size: 1.65em; }
+
+	a.cover-btn { font-size: 1.25em; }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+	.font-lg { font-size: 5em; }
 
+	h4 { font-size: 1.75em; }
+
+	a.cover-btn { font-size: 1.4em; }
+}
+
+@media (min-width: 1600px) {
+	.font-lg { font-size: 5.5em; }
+
+	h4 { font-size: 1.9em; }
+}
+
+@media (min-width: 1900px) {
+	.font-lg { font-size: 6em; }
+
+	h4 { font-size: 2em; }
+}
+
+@media (min-width: 2500px) {
+	.font-lg { font-size: 7em; }
+
+	h4 { font-size: 2.5em; }
+}
+
+@media (min-width: 3800px) {
+	.font-lg { font-size: 8.5em; }
+
+	h4 { font-size: 3.25em; }
+
+	a.cover-btn { font-size: 1.8em; }
 }
