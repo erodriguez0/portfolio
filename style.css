@@ -5,6 +5,7 @@
 .bold { font-weight: 700; }
 .font-lg { font-size: 4em; }
 h4 { font-size: 1.5em; }
+a.cover-btn { font-size: 1.25em; }
 .line-height-sm { line-height: .75em; }
 
 html, body {
@@ -69,10 +70,6 @@ html, body {
 .btn-dark-red:hover {
 	background-color: #783136;
 	color: #ffffff;
-}
-
-a.cover-btn {
-	font-size: 1.25em;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
