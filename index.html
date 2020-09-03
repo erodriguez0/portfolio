@@ -21,6 +21,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+	<!-- Featherlight -->
+	<link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -30,6 +32,8 @@
 
 	<section class="cover vh-100 w-100">
 		<div class="row h-100 justify-content-center flex-column align-items-center">
+
+			<!-- Centered Text & Links -->
 			<h1 class="text-center saira-extra bold lh-1">ESTEBAN <span class="dark-red">RODRIGUEZ</span></h1>
 			<h3 class="text-center saira-semi">Software Developer</h3>
 			<h3 class="text-center saira-semi">
@@ -37,6 +41,8 @@
 				<b>&#xb7;</b> 
 				<a class="dark-red text-link" href="mailto:erodriguez0705@gmail.com">erodriguez0705@gmail.com</a>
 			</h3>
+
+			<!-- Social Links -->
 			<div class="my-3 text-center">
 				<!-- LinkedIn -->
 				<a href="https://www.linkedin.com/in/erodriguez0/" target="_blank"><i class="fab fa-linkedin lin"></i></a>
@@ -47,14 +53,36 @@
 				<!-- Facebook -->
 				<a href="https://www.facebook.com/erodriguez0/" target="_blank"><i class="fab fa-facebook-square fbk"></i></a>
 			</div>
-		</div>
 
+			<div class="btn-row">
+				<button class="btn btn-dark-red z-depth-0 py-2 rounded resume-btn">Resume</button>
+				<a class="btn btn-dark-red z-depth-0 py-2 rounded">Projects</a>
+			</div>
+
+		</div>
 	</section>
 
 </main>
 
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<!-- <script type="text/javascript" src="./script.js"></script> -->
+	<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var h = $(window).height();
+			var w = $(window).width();
+
+			function windowResize() {
+				h = $(window).height();
+				w = $(window).width();
+			}
+
+			$('.resume-btn').featherlight({
+				iframe: './resume.pdf',
+				iframeWidth: w * .85,
+				iframeHeight: h * .8
+			});
+		});
+	</script>
 </body>
 </html>

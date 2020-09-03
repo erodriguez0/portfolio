@@ -1,5 +1,5 @@
-main {
-	/*background:linear-gradient(70deg, #333, #333 30%, white 30%, white);*/
+body {
+	/*background:linear-gradient(90deg, #333, #333 20%, white 20%, white);*/
 }
 
 h1 {
@@ -9,6 +9,10 @@ h1 {
 .cover {
 	font-family: 'Saira Semi Condensed', sans-serif;
 	color: #333;
+}
+
+.projects {
+
 }
 
 .saira-semi {
@@ -26,6 +30,28 @@ h1 {
 
 .saira-extra {
 	font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+a.btn-dark-red, a.btn-dark-red:visited {
+	background-color: #9a1111;
+	color: #fff;
+	font-size: 1.25em;
+}
+
+a.btn-dark-red:hover {
+	background-color: #790d0d;
+	color: #fff;
+}
+
+button.btn-dark-red, button.btn-dark-red:visited {
+	background-color: #9a1111;
+	color: #fff;
+	font-size: 1.25em;
+}
+
+button.btn-dark-red:hover {
+	background-color: #790d0d;
+	color: #fff;
 }
 
 .dark-red {
