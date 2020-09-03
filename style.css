@@ -1,135 +1,101 @@
-/*Extra small devices (portrait phones, less than 576px)*/
-/*No media query since this is the default in Bootstrap*/
-
-.dark-red { color: #963e44; }
-.bold { font-weight: 700; }
-.font-lg { font-size: 4em; }
-h4 { font-size: 1.5em; }
-a.cover-btn { font-size: 1.25em; }
-.line-height-sm { line-height: .75em; }
-
-html, body {
-	background-color: #fff;
-	scroll-behavior: smooth;
-	color: #495057;
-	height: 100%;
-	letter-spacing: 1.5px;
-	/* Sticky navbar cannot have overflow hidden in parent */
-}
-
-.container {
-	min-height: 100%;
+h1 {
+	font-size: 5em;
 }
 
 .cover {
+	font-family: 'Saira Semi Condensed', sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+
+.lh-1 {
+	line-height: 1;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.saira-extra {
 	font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-.email-link:hover {
-	color: #783136;
+.dark-red {
+	color: #9a1111;
 }
 
-.hr {
-	border-top: 1px solid #cdcdcd;
+.text-link, .text-link:visited {
+	color: #9a1111;
 }
 
-.link-buttons, .social-icons {
-	/*width: 300px;*/
+.text-link:hover {
+	color: #790d0d;
 }
 
-.social-icons a {
-	/*display: inline-block;*/
-	height: 3.5rem;
-	width: 3.5rem;
-	background-color: #495057;
-	color: #fff !important;
-	border-radius: 10%;
-	text-align: center;
-	font-size: 1.5rem;
-	line-height: 3.5rem;
-	/*margin-right: 1rem;*/
+i.fab, i.fab:visited {
+	font-size: 3.5em;
+	padding-left: .5em;
+	padding-right: .5em;
+	color: #333;
+	transition: .4s ease;
 }
 
-.social-icons a:last-child {
-	margin-right: 0;
+i.fab.lin:hover {
+	color: #0e76a8;
+	transition: .4s ease;
 }
 
-.social-icons a:hover {
-	background-color: #963e44;
+i.fab.git:hover {
+	color: #6e5494;
+	transition: .4s ease;
 }
 
-.buttons a {
-	font-size: 1rem;
+i.fab.twt:hover {
+	color: #00acee;
+	transition: .4s ease;
 }
 
-.btn-dark-red {
-	background-color: #963e44;
-	color: #ffffff;
-}
-
-.btn-dark-red:hover {
-	background-color: #783136;
-	color: #ffffff;
+i.fab.fbk:hover {
+	color: #3b5998;
+	transition: .4s ease;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-	.link-buttons, .social-icons {
-		/*width: 400px;*/
-	}
+	
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-	.font-lg { font-size: 4em; }
 
-	h4 { font-size: 1.5em }
-
-	.hr {
-		max-width: 600px;
-	}
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-	.font-lg { font-size: 4.75em; }
 
-	h4 { font-size: 1.65em; }
-
-	a.cover-btn { font-size: 1.25em; }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-	.font-lg { font-size: 5em; }
 
-	h4 { font-size: 1.75em; }
-
-	a.cover-btn { font-size: 1.4em; }
 }
 
 @media (min-width: 1600px) {
-	.font-lg { font-size: 5.5em; }
 
-	h4 { font-size: 1.9em; }
 }
 
 @media (min-width: 1900px) {
-	.font-lg { font-size: 6em; }
 
-	h4 { font-size: 2em; }
 }
 
 @media (min-width: 2500px) {
-	.font-lg { font-size: 7em; }
 
-	h4 { font-size: 2.5em; }
 }
 
 @media (min-width: 3800px) {
-	.font-lg { font-size: 8.5em; }
 
-	h4 { font-size: 3.25em; }
-
-	a.cover-btn { font-size: 1.8em; }
 }
