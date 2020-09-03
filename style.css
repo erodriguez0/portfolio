@@ -11,8 +11,9 @@ h1 {
 	color: #333;
 }
 
-.projects {
-
+.resume-viewer {
+	max-height: 85%;
+	max-width: 95%;
 }
 
 .saira-semi {
