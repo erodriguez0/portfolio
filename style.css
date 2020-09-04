@@ -1,5 +1,7 @@
 body {
 	/*background:linear-gradient(90deg, #333, #333 20%, white 20%, white);*/
+	font-family: 'Saira Semi Condensed', sans-serif;
+	background-color: #fdfdfd;
 }
 
 h1 {
@@ -93,6 +95,34 @@ i.fab.twt:hover {
 i.fab.fbk:hover {
 	color: #3b5998;
 	transition: .4s ease;
+}
+
+li a i.lin, li a i.git, li a i.twt, li a i.fbk {
+	font-size: 1em;
+	color: #fff;
+}
+
+nav {
+	min-width: 100%;
+	background-color: #333;
+}
+
+.navbar-brand {
+	/*font-family: 'Saira Extra Condensed', sans-serif;*/
+	/*font-weight: 500;*/
+	/*letter-spacing: .25em;*/
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .75s, visibility .75s;
+}
+
+.shown {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .75s, visibility .75s;
 }
 
 /*Small devices (landscape phones, 576px and up)*/

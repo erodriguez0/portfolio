@@ -60,15 +60,79 @@
 		</div>
 	</section>
 
-<!-- 	<section class="vh-100 w-100">
-		<div class="row h-100 justify-content-center align-items-center">
-			<object class="resume-viewer" width="900" height="900" data="./resume.pdf"></object>
+	<section class="vh-100 w-100">
+		<div class="row">
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top hidden">
+				<a class="navbar-brand text-uppercase mx-auto" href="./">Esteban <span class="dark-red">Rodriguez</span></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="navbar-nav ml-auto d-flex justify-content-center align-items-center">
+						<li class="nav-item"><a class="nav-link p-2 px-3" href="./resume.pdf" target="_blank">Resume</a></li>
+						<li class="nav-item"><a class="nav-link p-2 px-3" href="#">Projects</a></li>
+						<li class="nav-item"><a class="nav-link p-2 px-3" href="#">Contact</a></li>
+
+						<!-- Navbar social links -->
+						<!-- linkedin -->
+						<li class="nav-item"><a class="nav-link p-0"href="https://www.linkedin.com/in/erodriguez0/" target="_blank"><i class="fab fa-linkedin lin p-2 px-3"></i></a></li>
+						<!-- github -->
+						<li class="nav-item"><a class="nav-link p-0" href="https://github.com/erodriguez0" target="_blank"><i class="fab fa-github git p-2 px-3"></i></a></li>
+						<!-- twitter -->
+						<li class="nav-item"><a class="nav-link p-0" href="https://twitter.com/erodriguez0705" target="_blank"><i class="fab fa-twitter twt p-2 px-3"></i></a></li>
+						<!-- facebook -->
+						<li class="nav-item"><a class="nav-link p-0" href="https://www.facebook.com/erodriguez0/" target="_blank"><i class="fab fa-facebook fbk p-2 px-3"></i></a></li>
+					</ul>
+				</div>
+			</nav>
 		</div>
-	</section> -->
+	</section>
+
+	<section class="vh-100 w-100">
+
+	</section>
 
 </main>
 
 	<!-- SCRIPTS -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	<script type="text/javascript">
+		var w = $(window).width();
+		var h = $(window).height();
+		var st = $(window).scrollTop();
+
+		$(document).ready(function() {
+			w = $(window).width();
+			h = $(window).height();
+			st = $(window).scrollTop();
+		});
+
+		$(window).on('resize', function() {
+			w = $(this).width();
+			h = $(this).height();
+		});
+
+		$(window).on('scroll', function() {
+			st = $(this).scrollTop();
+		});
+
+		$(window).on('scroll', function() {
+			console.log(st);
+			if(st >= h / 2) {
+				$("nav").removeClass("hidden");
+				$("nav").addClass("shown");
+			} else {
+				$("nav").removeClass("shown");
+				$("nav").addClass("hidden");
+			}
+		});
+	</script>
 </body>
 </html>
