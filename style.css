@@ -87,6 +87,11 @@ i.fab.git:hover {
 	transition: .4s ease;
 }
 
+i.fab.sof:hover {
+	color: #f48024;
+	transition: .4s ease;
+}
+
 i.fab.twt:hover {
 	color: #00acee;
 	transition: .4s ease;
@@ -97,7 +102,7 @@ i.fab.fbk:hover {
 	transition: .4s ease;
 }
 
-li a i.lin, li a i.git, li a i.twt, li a i.fbk {
+li a i.lin, li a i.git, li a i.twt, li a i.fbk, li a .sof {
 	font-size: 1em;
 	color: #fff;
 }
