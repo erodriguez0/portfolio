@@ -1,0 +1,10 @@
+body {
+  padding-top: 56px;
+}
+.h-350 {
+    height: 367px !important;
+    background-color: #000000;
+    border-radius: 20px;
+    opacity: 0.9;
+    width: 100%;
+}

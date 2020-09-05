@@ -1,0 +1,678 @@
+@font-face {
+	font-family: 'Oswald';
+	font-weight: 400;
+	src: url('../webfonts/Oswald-Regular.ttf') format('woff'),
+		 url('../webfonts/Oswald-Regular.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Oswald';
+	font-weight: 300;
+	src: url('../webfonts/Oswald-Light.ttf') format('woff'),
+		 url('../webfonts/Oswald-Light.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Oswald';
+	font-weight: 700;
+	src: url('../webfonts/Oswald-Bold.ttf') format('woff'),
+		 url('../webfonts/Oswald-Bold.ttf') format('ttf');
+}
+
+
+/*
+####################################################
+M O D I F I E D  B O O T S T R A P  C L A S S E S
+####################################################
+*/
+
+/*
+####################################################
+B O O T S T R A P  B U T T O N S
+####################################################
+*/
+.btn {
+	border-radius: 0;
+	border: none;
+	text-transform: uppercase;
+	/*font-size: 1em;*/
+	/*padding: .85em 2em;*/
+	background-color: rgba(0,0,0,0);
+}
+
+.btn-secondary {
+	background-color: #6c757d;
+}
+
+.btn-sm-text {
+	font-size: .9em;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active:focus
+.btn-primary:visited:active
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active:focus
+.btn-primary:visited:active { 
+	background-color: #71100f !important; 
+	box-shadow: none; 
+	border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:visited:hover { 
+	background-color: #5a0d0c !important; 
+	box-shadow: none; 
+	border: none;
+}
+
+.btn-alt,
+.btn-alt:focus,
+.btn-alt:active:focus
+.btn-alt:visited:active {
+	color: #fff;
+	background-color: #555;
+	box-shadow: none;
+	border: none;
+}
+
+.btn-alt:hover,
+.btn-alt:visited:hover {
+	background-color: #333;
+	box-shadow: none;
+	border: none;
+	color: #fff;
+}
+
+.btn-group.special {
+	display: flex;
+}
+
+.text-link,
+.text-link:focus,
+.text-link:active:focus,
+.text-link:visited:active {
+	color: #71100F;
+}
+
+.text-link:hover,
+.text-link:visited:hover {
+	color: #5a0d0c;
+	text-decoration: none;
+}
+
+.table-link:hover {
+	text-decoration: underline !important;
+}
+
+.special .btn {
+	flex: 1
+}
+
+.btn-link-alt,
+.btn-link-alt:focus,
+.btn-link-alt:active:focus,
+.btn-link-alt:visited:active {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.btn-link-alt:hover {
+	cursor: pointer;
+	border: none;
+}
+
+.btn-danger {
+	background-color: #dc3545;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+/*select:active,
+select:focus,*/
+.btn:active,
+.btn.active {
+	outline: 0px !important;
+	/*-webkit-appearance: none;*/
+	box-shadow: none !important;
+}
+
+select:active,
+select:focus {
+	outline: 0px !important;
+	box-shadow: none !important;
+}
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.status-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.status-slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.cb-list {
+	overflow: hidden;
+}
+
+.cb-list-child {
+	max-height: 85px;
+	overflow: auto;
+}
+
+.rsvn-checkout-label {
+	min-width: 50px;
+	max-width: 50px;
+}
+
+.fa-star {
+	font-size: .75em;
+	/*align-self: center;*/
+}
+
+.star-checked {
+	color: gold;
+}
+
+.after-nav {
+	margin-top: 64px !important;
+}
+
+.vh-100 {
+	min-height: 100vh !important;
+	height: 100vh !important;
+	max-height: 100vh !important;
+	overflow: hidden;
+}
+
+/* LOADING ANIMATION */
+#cover {
+	position: fixed; 
+	height: 100%; 
+	width: 100%; 
+	top:0; 
+	left: 0; 
+	background-color: #5a0d0c;
+	z-index:9999;
+}
+
+.spinner {
+	margin: 100px auto 0;
+	width: 70px;
+	text-align: center;
+}
+
+.spinner > div {
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+/* LOADING ANIMATION END */
+
+
+input:checked + .status-slider {
+	background-color: #2196F3;
+}
+
+input:focus + .status-slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .status-slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+#manager-list .table td,
+#employee-list .table td {
+	word-break: break-word;
+	vertical-align: middle;
+	max-width: 148px;
+}
+
+.break-word {
+	word-break: break-word !important;
+}
+
+.legend-box {
+	width: 15px;
+	height: 13px;
+	max-width: 13px;
+	max-height: auto;
+	border: 1px solid #000;
+	display: inline-block;
+}
+
+.legend-1 { background-color: #E31C23; }
+.legend-2 { background-color: #c52e13; }
+.legend-3 { background-color: #D94A17; }
+.legend-4 { background-color: #E37B1C; }
+.legend-5 { background-color: #E39F1C; }
+.legend-6 { background-color: #B7A524; }
+.legend-7 { background-color: #95B329; }
+.legend-8 { background-color: #5B8835; }
+.legend-9 { background-color: #085E08; }
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+ 
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+.primary-text-color { color: #71100f; }
+
+.welcome-link:hover { text-decoration: underline; }
+
+.fit-viewport {
+	height: 100vh;
+	width: 100vw;
+}
+
+.welcome-bg {
+	background: url(../img/layout/welcome.jpg) center center no-repeat fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.welcome-title {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 5em;
+	letter-spacing: 0.1em;
+	font-family: 'Oswald', sans-serif;
+}
+
+.admin-form-wrap {
+	width: 100%;
+}
+
+#home-nav {
+	background-color: #71100f;
+}
+
+.masthead {
+	height: 100vh;
+	min-height: 500px;
+	/*background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');*/
+	background-image: url('/delectable/public_html/assets/img/layout/welcome.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.navbar-brand {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.subheader-border {
+	border-bottom: 3px solid #71100F;
+}
+
+.emp-profile-modal-img {
+	display: block;
+	max-width: 150px;
+	max-height: 150px;
+	width: auto;
+	height: auto;
+}
+
+.profile-img-wrap {
+	max-height: auto;
+	max-width: 100%;
+	min-height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-img {
+	display: block;
+	width: auto;
+	min-height: 250px;
+	max-height: 250px;
+}
+
+.emp-profile-img {
+	display: block;
+	max-width: 350px;
+	max-height: 350px;
+	width: auto;
+	height: auto;
+}
+
+.overflow-x {
+	overflow-x: scroll;
+}
+
+/*.overflow-x-fit {
+	overflow-x: scroll;
+}*/
+
+.label-btn {
+	pointer-events: none;
+	background-color: #333;
+}
+
+.invoice-details {
+	/*font-family: 'Helvetica', sans-serif;*/
+}
+
+.mh-textarea {
+	max-height: 300px;
+}
+
+.res-img-thumb {
+	min-width: 254px;
+	width: 254px;
+	max-width: 254px;
+	min-height: 200px;
+	height: 200px;
+	max-height: 200px;
+}
+
+.img-thumb {
+	display: block;
+	height: 100%;
+	width: auto;
+}
+
+.res-title {
+	min-height: 45px;
+	max-height: 45px;
+}
+
+.res-description {
+	overflow-y: hidden;
+	min-height: 60px;
+	max-height: 60px;
+}
+
+.block-with-text {
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+}
+
+.profile-label {
+	margin-bottom: .25rem;
+}
+
+.box-score-wrap {
+	min-width:  75px;
+	max-width:  75px;
+	min-height: 75px;
+	max-height: 75px;
+	border: 1px solid #000;
+}
+
+.box-score {
+	min-width:  75px;
+	max-width:  75px;
+	min-height: 75px;
+	max-height: 75px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.line-height-one {
+	line-height: 1.2 !important;
+}
+
+.menu-cat-square {
+	min-width: 100px;
+	max-width: 100px;
+	min-height: 130px;
+	max-height: 130px;
+	/*border-radius: 50%;*/
+	/*border: 1px solid #000;*/
+}
+
+.menu-cat-square img {
+	min-width: 100px;
+	max-width: 100px;
+	min-height: 100px;
+	max-height: 100px;
+	/*border-radius: 50%;*/
+	transition: .5s ease;
+	/*border: 1px solid #000;*/
+}
+
+.menu-cat-square:hover img {
+	opacity: 0.5;
+}
+
+.cat-text {
+	font-size: 16px;
+	color: #000;
+}
+
+.menu-cat-square:hover .cat-text {
+	display: block;
+}
+
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+
+.overflow-x-auto {
+	overflow-x: auto;
+}
+
+.overflow-x-auto::-webkit-scrollbar { 
+    /*display: none; */
+} 
+
+.overflow-x-auto::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+ 
+.overflow-x-auto::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    background-color: #efefef;
+    /*border-radius: 10px;*/
+}
+ 
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    /*border-radius: 10px;*/
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+    background-color: #cdcdcd;
+}
+
+.masthead-input {
+	max-width: 100%;
+}
+
+.w-fit-content {
+	width: fit-content;
+}
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+	.res-img-thumb {
+		min-width: 453px;
+		width: 453px;
+		max-width: 453px;
+	}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	.res-img-thumb {
+		min-width: 330px;
+		width: 330px;
+		max-width: 330px;
+	}
+
+	.img-thumb {
+		width: 100%;
+		height: auto;
+	}
+
+	.admin-form-wrap {
+		width: 300px;
+	}
+
+	.card-text {
+		min-height: 110px;
+		max-height: 110px;
+	}
+
+	.masthead-input {
+		max-width: 80%;
+	}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.res-img-thumb {
+		min-width: 210px;
+		width: 210px;
+		max-width: 210px;
+	}
+
+	.img-thumb {
+		height: 100%;
+		width: auto;
+	}
+
+	.paragraph-container {
+		max-width: 50%;
+	}
+
+	.restaurant-edit-form-wrap {
+		max-width: 480px;
+	}
+
+	.overflow-x {
+		overflow-x: hidden;
+	}
+
+	.masthead-input {
+		max-width: 60%;
+	}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	.res-img-thumb {
+		min-width: 254px;
+		width: 254px;
+		max-width: 254px;
+	}
+
+	.masthead-input {
+		max-width: 50%;
+	}
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+ 
+}

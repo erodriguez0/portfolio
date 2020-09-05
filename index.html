@@ -25,8 +25,47 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top hidden">
+	<a class="navbar-brand text-uppercase mx-auto" href="./">Esteban <span class="dark-red">Rodriguez</span></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul id="navbar-nav" class="navbar-nav ml-auto">
+			<li class="nav-item"><a class="nav-link p-2 px-3" href="./resume.pdf" target="_blank">Resume</a></li>
+			<li class="nav-item"><a id="projects-link" class="nav-link p-2 px-3" href="#projects">Projects</a></li>
+			<!-- <li class="nav-item"><a class="nav-link p-2 px-3" href="#">Contact</a></li> -->
+
+			<!-- Navbar social links -->
+			<!-- linkedin -->
+			<li class="nav-item desktop-link"><a class="nav-link p-0"href="https://www.linkedin.com/in/erodriguez0/" target="_blank"><i class="fab fa-linkedin lin p-2 px-3"></i></a></li>
+			<!-- github -->
+			<li class="nav-item desktop-link"><a class="nav-link p-0" href="https://github.com/erodriguez0" target="_blank"><i class="fab fa-github git p-2 px-3"></i></a></li>
+			<!-- Stack Overflow -->
+			<li class="nav-item desktop-link"><a class="nav-link p-0" href="https://stackoverflow.com/users/2445730/esteban-rodriguez" target="_blank"><i class="fab fa-stack-overflow sof p-2 px-3"></i></a></li>
+			<!-- twitter -->
+			<li class="nav-item desktop-link"><a class="nav-link p-0" href="https://twitter.com/erodriguez0_" target="_blank"><i class="fab fa-twitter twt p-2 px-3"></i></a></li>
+			<!-- facebook -->
+			<li class="nav-item desktop-link"><a class="nav-link p-0" href="https://www.facebook.com/erodriguez0/" target="_blank"><i class="fab fa-facebook fbk p-2 px-3"></i></a></li>
+
+			<!-- Navbar social links -->
+			<!-- linkedin -->
+			<li class="nav-item mobile-link"><a class="nav-link p-2 px-3" href="https://www.linkedin.com/in/erodriguez0/" target="_blank">LinkedIn</a></li>
+			<!-- github -->
+			<li class="nav-item mobile-link"><a class="nav-link p-2 px-3" href="https://github.com/erodriguez0" target="_blank">GitHub</a></li>
+			<!-- Stack Overflow -->
+			<li class="nav-item mobile-link"><a class="nav-link p-2 px-3" href="https://stackoverflow.com/users/2445730/esteban-rodriguez" target="_blank">StackOverflow</a></li>
+			<!-- twitter -->
+			<li class="nav-item mobile-link"><a class="nav-link p-2 px-3" href="https://twitter.com/erodriguez0_" target="_blank">Twitter</a></li>
+			<!-- facebook -->
+			<li class="nav-item mobile-link"><a class="nav-link p-2 px-3" href="https://www.facebook.com/erodriguez0/" target="_blank">Facebook</a></li>
+		</ul>
+	</div>
+</nav>
+
 <!-- WRAPPER -->
-<main class="container-fluid">
+<main class="container">
 
 	<section class="cover vh-100 w-100">
 		<div class="row h-100 justify-content-center flex-column align-items-center">
@@ -37,7 +76,7 @@
 			<h3 class="text-center saira-semi">
 				<span>(661) 747-5928</span> 
 				<b>&#xb7;</b> 
-				<a class="dark-red text-link" href="mailto:mrestebanrodriguez@gmail.com">mrestebanrodriguez@gmail.com</a>
+				<a class="dark-red text-link" href="mailto:mrestebanrodriguez@gmail.com">mr.esteban.rodriguez@gmail.com</a>
 			</h3>
 
 			<!-- Social Links -->
@@ -54,44 +93,92 @@
 
 			<div class="btn-row py-2">
 				<a class="btn btn-dark-red z-depth-0 py-2 rounded resume-btn" href="./resume.pdf" target="_blank">Resume</a>
-				<button class="btn btn-dark-red z-depth-0 py-2 rounded">Projects</button>
+				<button id="projects-btn" class="btn btn-dark-red z-depth-0 py-2 rounded">Projects</button>
 			</div>
 
 		</div>
 	</section>
 
-	<section class="vh-100 w-100">
-		<div class="row">
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top hidden">
-				<a class="navbar-brand text-uppercase mx-auto" href="./">Esteban <span class="dark-red">Rodriguez</span></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbar">
-					<ul class="navbar-nav ml-auto d-flex justify-content-center align-items-center">
-						<li class="nav-item"><a class="nav-link p-2 px-3" href="./resume.pdf" target="_blank">Resume</a></li>
-						<li class="nav-item"><a class="nav-link p-2 px-3" href="#">Projects</a></li>
-						<li class="nav-item"><a class="nav-link p-2 px-3" href="#">Contact</a></li>
-
-						<!-- Navbar social links -->
-						<!-- linkedin -->
-						<li class="nav-item"><a class="nav-link p-0"href="https://www.linkedin.com/in/erodriguez0/" target="_blank"><i class="fab fa-linkedin lin p-2 px-3"></i></a></li>
-						<!-- github -->
-						<li class="nav-item"><a class="nav-link p-0" href="https://github.com/erodriguez0" target="_blank"><i class="fab fa-github git p-2 px-3"></i></a></li>
-						<!-- Stack Overflow -->
-						<li class="nav-item"><a class="nav-link p-0" href="https://stackoverflow.com/users/2445730/esteban-rodriguez" target="_blank"><i class="fab fa-stack-overflow sof p-2 px-3"></i></a></li>
-						<!-- twitter -->
-						<li class="nav-item"><a class="nav-link p-0" href="https://twitter.com/erodriguez0_" target="_blank"><i class="fab fa-twitter twt p-2 px-3"></i></a></li>
-						<!-- facebook -->
-						<li class="nav-item"><a class="nav-link p-0" href="https://www.facebook.com/erodriguez0/" target="_blank"><i class="fab fa-facebook fbk p-2 px-3"></i></a></li>
-					</ul>
+	<section id="projects" class="vh-100 w-100 d-md-flex align-items-center justify-content-center">
+		<div class="row py-5">
+			<div class="col-12 col-md-6 col-lg-4 mt-3 mb-2">
+				<div class="my-2">
+					<img class="mx-auto w-100 thumbnail" src="./thumbnails/delectable.jpg">
 				</div>
-			</nav>
+				<div class="d-block pt-2">
+					<h5>Delectable - Reservations System</h5>
+				</div>
+				<div class="btn-group btn-block" role="group">
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-left resume-btn mx-0" href="./delectable/public_html/" target="_blank">Demo</a>
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-right resume-btn mx-0" href="https://github.com/erodriguez0/delectable" target="_blank">Code</a>
+				</div>
+			</div>
+			
+			<div class="col-12 col-md-6 col-lg-4 mt-3 mb-2">
+				<div class="my-2">
+					<img class="mx-auto w-100 thumbnail" src="./thumbnails/fighterz.jpg">
+				</div>
+				<div class="d-block pt-2">
+					<h5>Fighterz - 2D Fighting Game</h5>
+				</div>
+				<div class="btn-group btn-block" role="group">
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-left resume-btn mx-0 disabled" href="#" target="_blank">Demo</a>
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-right resume-btn mx-0" href="https://github.com/erodriguez0/Fighterz" target="_blank">Code</a>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4 mt-3 mb-2">
+				<div class="my-2">
+					<img class="mx-auto w-100 thumbnail" src="./thumbnails/comp-repair.jpg">
+				</div>
+				<div class="d-block pt-2">
+					<h5>Computer Repair Customer Service</h5>
+				</div>
+				<div class="btn-group btn-block" role="group">
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-left resume-btn mx-0 disabled" href="#" target="_blank">Demo</a>
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-right resume-btn mx-0" href="https://github.com/erodriguez0/computer-repair-business-app" target="_blank">Code</a>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4 mt-3 mb-2">
+				<div class="my-2">
+					<img class="mx-auto w-100 thumbnail" src="./thumbnails/heavy-6-forum.jpg">
+				</div>
+				<div class="d-block pt-2">
+					<h5>Heavy 6 - Social Forum</h5>
+				</div>
+				<div class="btn-group btn-block" role="group">
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-left resume-btn mx-0" href="https://cs.csubak.edu/~erodriguez/project3/home.php" target="_blank">Demo</a>
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-right resume-btn mx-0" href="https://github.com/erodriguez0/simple-forum" target="_blank">Code</a>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4 mt-3 mb-2">
+				<div class="my-2">
+					<img class="mx-auto w-100 thumbnail" src="./thumbnails/code4care.jpg">
+				</div>
+				<div class="d-block pt-2">
+					<h5>59DaysOfCode: Code4Care</h5>
+				</div>
+				<div class="btn-group btn-block" role="group">
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-left resume-btn mx-0" href="https://cs.csubak.edu/~code4care/Code4Care/59dockc-code4care/public_html/" target="_blank">Demo</a>
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-right resume-btn mx-0" href="https://github.com/59DAYSOFCODE/59dockc-code4care/tree/master/public_html" target="_blank">Code</a>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4 mt-3 mb-2">
+				<div class="my-2">
+					<img class="mx-auto w-100 thumbnail" src="./thumbnails/piano.jpg">
+				</div>
+				<div class="d-block pt-2">
+					<h5>Collaborative Piano</h5>
+				</div>
+				<div class="btn-group btn-block" role="group">
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-left resume-btn mx-0" href="https://cimw.azurewebsites.net/" target="_blank">Demo</a>
+					<a class="btn btn-dark-red z-depth-0 py-2 rounded-right resume-btn mx-0" href="https://github.com/erodriguez0/collaborative_interactive_music" target="_blank">Code</a>
+				</div>
+			</div>
 		</div>
-	</section>
-
-	<section class="vh-100 w-100">
-
 	</section>
 
 </main>
@@ -114,11 +201,29 @@
 			w = $(window).width();
 			h = $(window).height();
 			st = $(window).scrollTop();
+			if(w < 768) {
+				// $("#navbar-nav").removeClass("d-md-flex justify-content-center align-items-center");
+				$(".desktop-link").addClass("d-none");
+				$(".mobile-link").removeClass("d-none");
+			} else {
+				// $("#navbar-nav").addClass("d-md-flex justify-content-center align-items-center");
+				$(".desktop-link").removeClass("d-none");
+				$(".mobile-link").addClass("d-none");
+			}
 		});
 
 		$(window).on('resize', function() {
 			w = $(this).width();
 			h = $(this).height();
+			if(w < 768) {
+				// $("#navbar-nav").removeClass("d-md-flex justify-content-center align-items-center");
+				$(".desktop-link").addClass("d-none");
+				$(".mobile-link").removeClass("d-none");
+			} else {
+				// $("#navbar-nav").addClass("d-md-flex justify-content-center align-items-center");
+				$(".desktop-link").removeClass("d-none");
+				$(".mobile-link").addClass("d-none");
+			}
 		});
 
 		$(window).on('scroll', function() {
@@ -126,7 +231,6 @@
 		});
 
 		$(window).on('scroll', function() {
-			console.log(st);
 			if(st >= h / 2) {
 				$("nav").removeClass("hidden");
 				$("nav").addClass("shown");
@@ -134,6 +238,14 @@
 				$("nav").removeClass("shown");
 				$("nav").addClass("hidden");
 			}
+		});
+
+		$("#projects-btn").on('click', function() {
+			document.getElementById("projects").scrollIntoView({behavior: 'smooth'});
+		});
+
+		$("#projects-link").on('click', function() {
+			document.getElementById("projects").scrollIntoView({behavior: 'smooth'});
 		});
 	</script>
 </body>

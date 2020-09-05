@@ -130,6 +130,14 @@ nav {
 	transition: opacity .75s, visibility .75s;
 }
 
+.thumbnail {
+	height: 250px;
+	width: 320px;
+	max-height: 250px;
+	max-width: auto;
+	border: 1px solid #cdcdcd;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	
@@ -141,6 +149,11 @@ nav {
 	.resume-viewer {
 		max-height: 90%;
 		max-width: 75%;
+	}
+
+	.thumbnail {
+		height: 198px;
+		max-height: 198px;
 	}
 
 }
