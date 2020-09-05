@@ -156,18 +156,16 @@ nav {
 		max-height: 198px;
 	}
 
-	.brand {
-	    position: absolute;
-	    left: 50%;
-	    margin-left: -50px !important;  /* 50% of your logo width */
-	    display: block;
-	}
-
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+	.brand {
+	    position: absolute;
+	    left: 48%;
+	    margin-left: -50px !important;  /* 50% of your logo width */
+	    display: block;
+	}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
