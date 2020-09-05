@@ -138,6 +138,10 @@ nav {
 	border: 1px solid #333;
 }
 
+.brand {
+	margin-left: 31% !important;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	
@@ -162,7 +166,7 @@ nav {
 @media (min-width: 992px) {
 	.brand {
 	    position: absolute;
-	    left: 48%;
+	    left: 30%;
 	    margin-left: -50px !important;  /* 50% of your logo width */
 	    display: block;
 	}
@@ -170,7 +174,9 @@ nav {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+	.brand {
+		left: 48%;
+	}
 }
 
 @media (min-width: 1600px) {
