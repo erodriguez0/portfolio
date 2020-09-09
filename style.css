@@ -2,6 +2,11 @@ body {
 	/*background:linear-gradient(90deg, #333, #333 20%, white 20%, white);*/
 	font-family: 'Saira Semi Condensed', sans-serif;
 	background-color: #fdfdfd;
+	background: url('./img/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	z-index: 9999;
 }
 
 h1 {
@@ -11,6 +16,7 @@ h1 {
 .cover {
 	font-family: 'Saira Semi Condensed', sans-serif;
 	color: #333;
+	z-index: 1;
 }
 
 .resume-viewer {
